@@ -1,0 +1,107 @@
+/* 
+main-font: 'Raleway', sans-serif;
+logo-font : 'Economica', sans-serif;
+
+darkest-blue: #070a40
+accent-blue: #08298c
+accent-yellow: #f2b705
+accent-yellow-hover: #e1aa05
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-yellow {
+  padding: 3px 10px;
+  background-color: #f2b705;
+  border: 1px solid #f2b705;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yellow:hover {
+  background-color: #e1aa05;
+  border-color: #e1aa05;
+  cursor: pointer;
+}
+
+.card {
+  text-align: center;
+  padding: 1%;
+  padding-top: 2%;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  max-width: 1140px;
+  zoom: 1;
+  margin: 0 auto;
+}
+
+.row-white {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.row-white:before,
+.row-white:after {
+  display: block;
+  height: 2px;
+  width: 35%;
+  background-color: #f2b705;
+  content: "";
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 175%;
+  text-transform: uppercase;
+  margin: 100px auto 75px auto;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote h1 {
+  margin: 100px auto;
+  width: 70%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 150%;
+    font-weight: 400;
+    margin: 18% 0 12% 0;
+  }
+
+  .quote {
+    height: auto;
+  }
+
+  .quote h1 {
+    font-size: 115%;
+  }
+}

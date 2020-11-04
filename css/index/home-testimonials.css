@@ -1,0 +1,112 @@
+.section-testimonials {
+  height: 100%;
+  width: 85%;
+  background-color: #fff;
+  margin: 50px auto;
+  padding-bottom: 4%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  height: 68vh;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/testimonial_1.jpg);
+  /* Photo by Yingchou Han on Unsplash */
+  background-size: cover;
+  background-position: center;
+  /* for footer */
+  padding-bottom: 350px;
+  resize: both;
+
+  position: relative;
+}
+
+/* .testimonial-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../css/assets/images/testimonial_2.jpg);
+  Photo by LinkedIn Sales Navigator on Unsplash
+} */
+
+.box h1 {
+  position: absolute;
+
+  font-size: 150%;
+  text-align: right;
+  margin: 35% 0 0 15%;
+  max-width: 80%;
+}
+
+.box p {
+  position: absolute;
+  text-align: right;
+  margin: 42% 0 0 55%;
+}
+
+.box h1,
+.box p {
+  color: #fff;
+}
+
+.section-testimonials i {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.15);
+  bottom: 0;
+  left: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-testimonials i:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.section-testimonials i:last-of-type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1140px) {
+  .box h1,
+  .box p {
+    margin-left: 10%;
+  }
+
+  .box h1 {
+    font-size: 120%;
+    font-weight: 400;
+    margin-top: 45%;
+  }
+
+  .box p {
+    margin-top: 52%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-testimonials {
+    width: 96%;
+    background-position: left;
+  }
+
+  .box {
+    height: 120%;
+    width: 96%;
+  }
+
+  .box h1 {
+    font-size: 95%;
+    width: 100%;
+    margin: 73% 0 0 0;
+  }
+
+  .box p {
+    font-size: 60%;
+    margin: 85% 0 0 0;
+    text-align: right;
+    width: 100%;
+  }
+}
